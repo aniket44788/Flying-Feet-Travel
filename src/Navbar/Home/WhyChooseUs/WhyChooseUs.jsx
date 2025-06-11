@@ -1,5 +1,5 @@
 import React from 'react';
-import './whyChooseUs.css';
+import './WhyChooseUs.css';
 import { FaGlobeAsia, FaHeadset, FaHandHoldingUsd } from "react-icons/fa";
 
 const features = [
