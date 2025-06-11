@@ -7,7 +7,7 @@ import Blog from "./Navbar/Blogs/Blog"
 import Home from './Navbar/Home/Home'
 import Packages from './Navbar/Packages/Packages'
 import Destination from "./Navbar/Destination/Destination"
-import About from './Navbar/about/about'
+import About from './Navbar/about/About'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/destination' element={<Destination/>} />
           <Route path='festival/' element={<Festival />} />
           <Route path='/blog' element={<Blog />} />
-          <Route path='/' element={<About/>} />
+          <Route path='/about' element={<About/>} />
         </Routes>
       </Router>
     </>
