@@ -1,5 +1,5 @@
 import React from 'react';
-import './roamingExperience.css';
+import './RoamingExperience.css';
 import clip from "../RoamingExperience/clip.mp4"
 import { FaBolt } from "react-icons/fa";
 
