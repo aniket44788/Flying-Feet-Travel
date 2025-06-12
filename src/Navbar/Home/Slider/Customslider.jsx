@@ -14,7 +14,7 @@ const customslider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setState((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

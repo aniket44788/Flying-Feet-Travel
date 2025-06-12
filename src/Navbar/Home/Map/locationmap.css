@@ -1,7 +1,7 @@
 .map-container {
   width: 100%;
   padding: 30px 15px;
-  background-color: #f7f7f7;
+  background-color: #f3f7ff;
   text-align: center;
   box-sizing: border-box; /* Ensures padding is included in width */
 }

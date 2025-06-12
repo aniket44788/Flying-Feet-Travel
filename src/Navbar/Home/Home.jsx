@@ -13,6 +13,7 @@ import LocationMap from './Map/LocationMap';
 import Customslider from './Slider/Customslider';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 import RoamingExperience from './RoamingExperience/RoamingExperience';
+import Footer from './Footer/Footer';
 
 
 function Home() {
@@ -31,29 +32,6 @@ function Home() {
     location: "Dharamshala",
     price: "null"
   },
-  {
-    image: Kherrgangatreak,
-    title: "KHEERGANGA TREAK",
-    time: "2 Days / 1 Nights",
-    location: "Barshani",
-    price: "999/-"
-  },
-  {
-    image: Kherrgangatreak,
-    title: "KHEERGANGA TREAK",
-    time: "2 Days / 1 Nights",
-    location: "Barshani",
-    price: "999/-"
-  }
-    ,
-  {
-    image: Kherrgangatreak,
-    title: "KHEERGANGA TREAK",
-    time: "2 Days / 1 Nights",
-    location: "Barshani",
-    price: "999/-"
-  }
-    ,
   {
     image: Kherrgangatreak,
     title: "KHEERGANGA TREAK",
@@ -88,7 +66,7 @@ function Home() {
   return (
     <>
 
-    <Customslider/>
+      <Customslider />
 
 
       <br />
@@ -115,9 +93,10 @@ function Home() {
         </div>
       </div>
 
-   <WhyChooseUs/>
-   <RoamingExperience/>
-        <LocationMap/>
+      <WhyChooseUs />
+      <RoamingExperience />
+      <LocationMap />
+      <Footer />
 
 
 

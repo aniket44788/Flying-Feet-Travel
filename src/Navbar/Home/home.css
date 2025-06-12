@@ -18,6 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f3f7ff;
   position: relative;
 }
 
@@ -54,6 +55,7 @@ body {
   justify-content: center;
   padding: 2rem 1rem;
   /* border: 2px solid red; */
+  background-color: #f3f7ff;
 
 }
 
