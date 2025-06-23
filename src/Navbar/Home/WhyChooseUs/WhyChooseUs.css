@@ -1,0 +1,67 @@
+.why-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f3f7ff;
+}
+
+.why-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.why-subtext {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.why-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.why-box {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.why-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-box {
+    width: 90%;
+  }
+}
