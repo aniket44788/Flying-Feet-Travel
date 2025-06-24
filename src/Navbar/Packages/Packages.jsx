@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./packages.css"
 import Footer from "../Home/Footer/Footer";
+import Packageworking from "./PackageWork/Packageworking";
 function Packages() {
   const [packages, setPackages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,7 @@ function Packages() {
 
   return (
 <>
-
+<div className="package-title"> OUR  POPULAR  PACKAGES</div>
     <div className="package-list">
       {packages.map((pkg) => (
         <div key={pkg._id} className="package-card">
@@ -64,6 +65,8 @@ function Packages() {
         </div>
       ))}
     </div>
+
+    <Packageworking/>
 <Footer/>
 
 </>

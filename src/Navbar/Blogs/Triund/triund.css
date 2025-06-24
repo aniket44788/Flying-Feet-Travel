@@ -1,0 +1,113 @@
+/* Container Layout */
+.triund-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Card */
+.triund-card {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.triund-card:hover {
+  transform: translateY(-4px);
+}
+
+.triund-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.triund-card h2 {
+  font-size: 28px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.triund-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Button */
+.read-btn {
+  margin-top: 15px;
+  padding: 10px 24px;
+  background-color: #1976d2;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #0d47a1;
+}
+
+/* Animated Section Wrapper */
+.season-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.season-wrapper.show {
+  max-height: 5000px; /* ensure it’s large enough */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Season Cards */
+.season-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-left: 6px solid #64b5f6;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.season-card h3 {
+  color: #1565c0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.season-card p {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .triund-card, .season-card {
+    padding: 20px;
+  }
+
+  .triund-card h2, .season-card h3 {
+    font-size: 22px;
+  }
+
+  .triund-card p, .season-card p {
+    font-size: 14px;
+  }
+}

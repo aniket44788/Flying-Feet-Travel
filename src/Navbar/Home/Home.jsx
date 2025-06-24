@@ -12,21 +12,16 @@ import Customslider from './Slider/Customslider';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 import RoamingExperience from './RoamingExperience/RoamingExperience';
 import Footer from './Footer/Footer';
+import Svgimage from './Svgimage';
 
 
 function Home() {
 
- 
+
   return (
     <>
-
       <Customslider />
-
-    <div className="svg-self">
-      <img src={svg} alt="" width={"100%"}/>
-    </div>
-  
-
+      <Svgimage />
       <WhyChooseUs />
       <RoamingExperience />
       <LocationMap />
