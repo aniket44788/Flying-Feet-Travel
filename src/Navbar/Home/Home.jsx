@@ -13,6 +13,7 @@ import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 import RoamingExperience from './RoamingExperience/RoamingExperience';
 import Footer from './Footer/Footer';
 import Svgimage from './Svgimage';
+import HeroSection from './Blogturn/HeroSection';
 
 
 function Home() {
@@ -23,8 +24,10 @@ function Home() {
       <Customslider />
       <Svgimage />
       <WhyChooseUs />
+      <HeroSection/>
       <RoamingExperience />
-      <LocationMap />
+      <LocationMap/>
+      
       <Footer />
 
     </>
