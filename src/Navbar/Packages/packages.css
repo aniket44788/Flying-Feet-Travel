@@ -4,6 +4,9 @@ body {
   
   background-color: #f3f7ff;
 }
+
+
+
 .package-title{
   width: 100%;
   height: 50px;
@@ -140,3 +143,48 @@ body {
   background-color: #2563eb;
 }
 
+/* Media Queries for Responsive Layout */
+@media screen and (max-width: 1024px) {
+  .package-list {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-image img {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .package-title {
+    font-size: 24px;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  .package-list {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+  }
+
+  .card-image img {
+    height: 200px;
+  }
+
+  .read-more-btn {
+    width: 50%;
+    /* padding: 12px; */
+    font-size: 16px;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+}

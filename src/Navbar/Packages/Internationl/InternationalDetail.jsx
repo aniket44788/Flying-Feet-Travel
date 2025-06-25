@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom";
 import { FaHeadphones, FaStar, FaLifeRing, FaDollarSign, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useEffect, useState } from "react";
-import "./packagedetails.css";
-import Footer from "../Home/Footer/Footer";
+import "../packagedetails.css";
+import Footer from "../../Home/Footer/Footer";
+import Packageworking from "../PackageWork/Packageworking";
 
-function PackageDetails() {
+
+function InternationalDetail() {
   const { id } = useParams();
   const [pkg, setPkg] = useState(null);
 
@@ -13,7 +15,7 @@ function PackageDetails() {
   useEffect(() => {
     const fetchPackage = async () => {
       try {
-        const res = await fetch(`http://localhost:5678/packageget/${id}`);
+        const res = await fetch(`http://localhost:5678/internationalget/${id}`);
         const data = await res.json();
         setPkg(data.result || data);
       } catch (err) {
@@ -150,9 +152,10 @@ function PackageDetails() {
 
         </div>
       </div>
-      <Footer />
+      <Packageworking/>
+      <Footer/>
     </>
   );
 }
 
-export default PackageDetails;
+export default InternationalDetail;

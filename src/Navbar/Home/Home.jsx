@@ -1,10 +1,4 @@
-import React, { useState } from 'react'
-import { FcGlobe } from "react-icons/fc";
-import { FcAlarmClock } from "react-icons/fc";
-import { FcSportsMode } from "react-icons/fc";
 
-import { FcBullish } from "react-icons/fc";
-import svg from "../Home/svg.png"
 import "./home.css"
 
 import LocationMap from './Map/LocationMap';
@@ -27,7 +21,6 @@ function Home() {
       <HeroSection/>
       <RoamingExperience />
       <LocationMap/>
-      
       <Footer />
 
     </>

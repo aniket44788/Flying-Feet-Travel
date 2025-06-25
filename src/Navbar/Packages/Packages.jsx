@@ -29,47 +29,47 @@ function Packages() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-<>
-<div className="package-title"> OUR  POPULAR  PACKAGES</div>
-    <div className="package-list">
-      {packages.map((pkg) => (
-        <div key={pkg._id} className="package-card">
-          <div className="card-image">
-            <img
-              src={`http://localhost:5678/${pkg.file.replace(/\\/g, "/")}`}
-              alt={pkg.trekTitle}
-              className="card-main-image"
-            />
-            <span className="card-label">{pkg.trekTitle}</span>
-          </div>
-          <div className="card-content">
-            <h3 className="card-title">⚡ {pkg.trekTitle}</h3>
-            <p className="card-duration">🕒 {pkg.trekTiming}</p>
-            <p className="card-location">🛫 {pkg.trekPickup}</p>
+    <>
+      <div className="package-title"> OUR  DOMESTIC  PACKAGES</div>
+      <div className="package-list">
+        {packages.map((pkg) => (
+          <div key={pkg._id} className="package-card">
+            <div className="card-image">
+              <img
+                src={`http://localhost:5678/${pkg.file.replace(/\\/g, "/")}`}
+                alt={pkg.trekTitle}
+                className="card-main-image"
+              />
+              <span className="card-label">{pkg.trekTitle}</span>
+            </div>
+            <div className="card-content">
+              <h3 className="card-title">⚡ {pkg.trekTitle}</h3>
+              <p className="card-duration">🕒 {pkg.trekTiming}</p>
+              <p className="card-location">🛫 {pkg.trekPickup}</p>
 
-            <div className="card-price">
-              <div className="price-values">
-                <span className="old-price">{`₹${pkg.oldprice}`}</span>
-                <span className="new-price">{`₹${pkg.newprice}`}</span>
+              <div className="card-price">
+                <div className="price-values">
+                  <span className="old-price">{`₹${pkg.oldprice}`}</span>
+                  <span className="new-price">{`₹${pkg.newprice}`}</span>
+                </div>
+
+                <button
+                  className="read-more-btn"
+                  onClick={() => navigate(`/packageget/${pkg._id}`)}
+                >
+                  Read More
+                </button>
               </div>
 
-              <button
-                className="read-more-btn"
-                onClick={() => navigate(`/packageget/${pkg._id}`)}
-              >
-                Read More
-              </button>
             </div>
-
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
 
-    <Packageworking/>
-<Footer/>
+      <Packageworking />
+      <Footer />
 
-</>
+    </>
   );
 }
 
