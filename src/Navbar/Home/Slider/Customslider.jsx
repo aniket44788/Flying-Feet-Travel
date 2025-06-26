@@ -35,7 +35,6 @@ const customslider = () => {
         {images.map((img, idx) => (
           <div className="slide" key={idx}>
             <img src={img} alt={`slide-${idx}`} />
-            {/* <video src={img}></video> */}
           </div>
         ))}
       </div>

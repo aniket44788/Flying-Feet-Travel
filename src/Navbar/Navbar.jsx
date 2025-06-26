@@ -36,7 +36,7 @@ function Navbar() {
           <div className="nav-item dropdown">
             <span className="nav-link">Destination▾</span>
             <ul className="dropdown-menu">
-              <li><Link to="/destination" className="dropdown-item" onClick={closeMenu}>Himachal Pradesh </Link></li>
+              <li><Link to="/himachal" className="dropdown-item" onClick={closeMenu}>Himachal Pradesh </Link></li>
               <li><Link to="/jammukashmeer" className="dropdown-item" onClick={closeMenu}>Jammu & Kashmeer</Link></li>
               <li><Link to="/punjab" className="dropdown-item" onClick={closeMenu}>Punjab</Link></li>
               <li><Link to="/haryana" className="dropdown-item" onClick={closeMenu}>Haryana</Link></li>
