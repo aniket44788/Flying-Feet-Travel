@@ -8,6 +8,7 @@ import RoamingExperience from './RoamingExperience/RoamingExperience';
 import Footer from './Footer/Footer';
 import Svgimage from './Svgimage';
 import HeroSection from './Blogturn/HeroSection';
+import FooterCopy from "../FooterCopy"
 
 
 function Home() {
@@ -21,7 +22,8 @@ function Home() {
       <HeroSection/>
       <RoamingExperience />
       <LocationMap/>
-      <Footer />
+      <Footer/>
+      <FooterCopy/>
 
     </>
   )

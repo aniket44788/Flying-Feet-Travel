@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./packages.css"
 import Footer from "../Home/Footer/Footer";
 import Packageworking from "./PackageWork/Packageworking";
+import FooterCopy from "../FooterCopy";
 function Packages() {
   const [packages, setPackages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -82,7 +83,7 @@ function Packages() {
 
       <Packageworking />
       <Footer />
-
+        <FooterCopy/>
     </>
   );
 }
