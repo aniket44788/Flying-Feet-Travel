@@ -15,7 +15,7 @@ function InternationalDetail() {
   useEffect(() => {
     const fetchPackage = async () => {
       try {
-        const res = await fetch(`http://localhost:5678/internationalget/${id}`);
+        const res = await fetch(`https://flying-feet-travel-backend.onrender.com/${id}`);
         const data = await res.json();
         setPkg(data.result || data);
       } catch (err) {
