@@ -1,6 +1,6 @@
 import React from "react";
 import "./content6.css";
-import hlogo from "../../logo.jpeg";
+import hlogo from "../../fft.png";
 import {
     FaFacebook,
     FaInstagram,
