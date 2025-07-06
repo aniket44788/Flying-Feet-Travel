@@ -37,7 +37,7 @@ function InternationalDetail() {
 
         <div className="package-detail-container">
           <img
-            src={`http://localhost:5678/${pkg.file.replace(/\\/g, "/")}`}
+            src={`https://flying-feet-travel-backend.onrender.com/${pkg.file.replace(/\\/g, "/")}`}
             alt={pkg.trekTitle}
             className="package-detail-image"
           />

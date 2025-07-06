@@ -14,7 +14,7 @@ function Packages() {
   useEffect(() => {
     const fetchPackages = async () => {
       try {
-        const response = await fetch("http://localhost:5678/packageget");
+        const response = await fetch("https://flying-feet-travel-backend.onrender.com/packageget");
         const data = await response.json();
         setPackages(data.result);
       } catch (err) {
@@ -51,7 +51,7 @@ function Packages() {
           <div key={pkg._id} className="package-card">
             <div className="card-image">
               <img
-                src={`http://localhost:5678/${pkg.file.replace(/\\/g, "/")}`}
+                src={`https://flying-feet-travel-backend.onrender.com/${pkg.file.replace(/\\/g, "/")}`}
                 alt={pkg.trekTitle}
                 className="card-main-image"
               />
