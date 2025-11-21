@@ -24,7 +24,7 @@ function Navbar() {
         <div className={`navbar-menu ${menuOpen ? "active" : ""}`}>
           <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
 
-          <div className="nav-item dropdown">
+          {/* <div className="nav-item dropdown">
             <span className="nav-link">Packages ▾</span>
             <ul className="dropdown-menu">
               <li><Link to="/packages" className="dropdown-item" onClick={closeMenu}>Domestic Tours</Link></li>
@@ -53,11 +53,11 @@ function Navbar() {
               <li><Link to="/west-bengal" className="dropdown-item" onClick={closeMenu}>West Bengal</Link></li>
               <li><Link to="/delhi" className="dropdown-item" onClick={closeMenu}>Delhi</Link></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* <Link to="/destination" className="nav-link" onClick={closeMenu}>Destination</Link> */}
-          <Link to="/festival" className="nav-link" onClick={closeMenu}>Festival</Link>
-          <Link to="/blog" className="nav-link" onClick={closeMenu}>Blog</Link>
+          {/* <Link to="/festival" className="nav-link" onClick={closeMenu}>Festival</Link> */}
+          {/* <Link to="/blog" className="nav-link" onClick={closeMenu}>Blog</Link> */}
           <Link to="/about" className="nav-link" onClick={closeMenu}>About</Link>
         </div>
       </nav>

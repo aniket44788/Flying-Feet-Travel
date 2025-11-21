@@ -1,9 +1,9 @@
 import React from 'react'
 import "./footer.css"
-import kila from "../Tour Images/kila.png"
-import tajmahal from "../Tour Images/tajmahal.png"
-import minar from "../Tour Images/minar.png"
-import mountain from "../Tour Images/mountain.png"
+import kila from "../Tour Images/shimla.png"
+import tajmahal from "../Tour Images/dharamshala.png"
+import minar from "../Tour Images/kasol.png"
+import mountain from "../Tour Images/ataltunnel.png"
 function Footer() {
   return (
     <>

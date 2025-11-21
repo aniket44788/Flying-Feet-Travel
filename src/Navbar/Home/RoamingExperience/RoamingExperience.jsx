@@ -1,13 +1,15 @@
 import React from 'react';
 import './RoamingExperience.css';
 import clip from "../RoamingExperience/clip.mp4"
+import stadium from "../RoamingExperience/stadium.png"
 import { FaBolt } from "react-icons/fa";
 
 const RoamingExperience = () => {
   return (
     <div className="roaming-container">
       <div className="roaming-left">
-        <video className='video-clip' src={clip} autoPlay loop muted />
+        {/* <video className='video-clip' src={stadium} autoPlay loop muted /> */}
+        <img src={stadium} alt="" />
       </div>
 
       <div className="roaming-right">

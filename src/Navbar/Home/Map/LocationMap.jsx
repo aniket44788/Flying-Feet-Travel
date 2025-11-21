@@ -3,7 +3,7 @@ import "./locationmap.css"
 
 function LocationMap() {
   return (
-     <div className="map-container" data-aos = "fade-up">
+    <div className="map-container" data-aos="fade-up">
       <h2 className="map-title">Our Location</h2>
       <div className="map-frame">
         <iframe
@@ -17,6 +17,10 @@ function LocationMap() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+
+
+
+
     </div>
   )
 }

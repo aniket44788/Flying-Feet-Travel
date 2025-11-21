@@ -18,12 +18,12 @@ function App() {
       <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/packages' element={<Packages />} />
-          <Route path='/packageget/:id' element={<PackageDetails/>}/>
-          <Route path='/packages/international' element={<International/>} />
-          <Route path='/packages/internationalget/:id' element={<InternationalDetail/>}/>
-          <Route path='/himachal' element={<Himachal/>} />
-          <Route path='/blog' element={<Blog />} />
+          {/* <Route path='/packages' element={<Packages />} /> */}
+          {/* <Route path='/packageget/:id' element={<PackageDetails/>}/> */}
+          {/* <Route path='/packages/international' element={<International/>} /> */}
+          {/* <Route path='/packages/internationalget/:id' element={<InternationalDetail/>}/> */}
+          {/* <Route path='/himachal' element={<Himachal/>} /> */}
+          {/* <Route path='/blog' element={<Blog />} /> */}
           <Route path='/about' element={<About/>} />
         </Routes>
       </Router>

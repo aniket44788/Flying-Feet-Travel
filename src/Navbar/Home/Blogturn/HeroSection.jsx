@@ -12,8 +12,8 @@ function HeroSection() {
           Join Us On Your Next <br />
           Trip?
         </h1>
-        <button className="hero-button"><a className="hero-link" href="/blog">Visit Our Blog</a>
-        </button>
+        {/* <button className="hero-button"><a className="hero-link" href="/blog">Visit Our Blog</a>
+        </button> */}
       </div>
       <div className="hero-image">
         <img src={heroImage} alt="Travel Illustration" />

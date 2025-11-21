@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 import Svgimage from './Svgimage';
 import HeroSection from './Blogturn/HeroSection';
 import FooterCopy from "../FooterCopy"
+import Latesttours from "./Latesttours";
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
   return (
     <>
       <Customslider />
+      <Latesttours/>
       <Svgimage />
       <WhyChooseUs />
       <HeroSection/>
