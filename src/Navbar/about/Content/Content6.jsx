@@ -22,18 +22,18 @@ function Content6() {
                             <b> Hotel White Mountain</b>
                         </p>
                         <div className="social-icons">
-                            <a href="#">
+                            <a href="https://www.facebook.com/profile.php?id=61571662029360">
                                 {/* <FaFacebookF /> */}
                                 <FaFacebook />
                             </a>
                             <div className="icon-insta">
-                                <a href="#">
+                                <a href="https://www.instagram.com/flying_feet_holidays?igsh=NHlxbHV3ZHZ2Nmpi">
                                     <FaInstagram />
                                 </a>
                             </div>
-                            <a href="#">
+                            {/* <a href="#">
                                 <FaLinkedinIn />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
@@ -53,28 +53,28 @@ function Content6() {
                     <div className="contact-right" data-aos="fade-up">
                         <h3>Landline</h3>
                         <p>
-                            <FaPhoneAlt /> 78078-12028
+                            <FaPhoneAlt />  8351846490
                         </p>
                         <p>
-                            <FaPhoneAlt /> 78078-12028
+                            <FaPhoneAlt />  8351846490
                         </p>
 
                         <h3>Phone</h3>
                         <p>
-                            <MdPhoneInTalk /> +91-78078-12028
+                            <MdPhoneInTalk /> +91- 8351846490
                         </p>
                         <p>
-                            <MdPhoneInTalk /> +91-78078-12028
+                            <MdPhoneInTalk /> +91- 8351846490
                         </p>
 
                         <h3>Delhi Sales</h3>
                         <p>
-                            <MdPhoneInTalk /> +91-7832999005
+                            <MdPhoneInTalk /> +91- 8351846490
                         </p>
 
                         <h3>Email Us</h3>
                         <p>
-                            <FaEnvelope /> flyingfeettravel@gmail.com
+                            <FaEnvelope /> holidaysflyingfeet@gmail.com
                         </p>
 
                         <h3>Address</h3>

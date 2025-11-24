@@ -13,8 +13,8 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-section contact-info">
           <h3>Contact Info</h3>
-          <p><strong>Call Now</strong> – <a >+91-78078 12028</a></p>
-          <p><strong>Email</strong> – <a href="mailto: flyingfeetholidays@gmail.com">flyingfeetholidays@gmail.com</a></p>
+          <p><strong>Call Now</strong> – <a >+91-83518-46490</a></p>
+          <p><strong>Email</strong> – <a href="mailto: holidaysflyingfeet@gmail.com">holidaysflyingfeet@gmail.com</a></p>
           <p><strong>Address</strong> – Near Bus Stand, Bhagsunag Rd, McLeod Ganj, Dharamshala, Himachal Pradesh 176219</p>
         </div>
 
