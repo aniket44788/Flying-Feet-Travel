@@ -23,7 +23,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
 
         setIsLoading(true);
         try {
-            const response = await fetch('http://localhost:5678/email/send-enquiry', {
+            const response = await fetch('https://flying-feet-travel-backend.onrender.com/email/send-enquiry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
