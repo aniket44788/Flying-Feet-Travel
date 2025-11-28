@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import React from 'react'
 import "./customslider.css"
-import tajmahal from "../Tour Images/dharmshala.png"
+import tajmahal from "../Tour Images/taju.jpeg"
 import kila from "../Tour Images/shimla.png"
 import mountain from "../Tour Images/kasol.png"
 import minar from "../Tour Images/tunnel.png"

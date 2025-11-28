@@ -11,6 +11,7 @@ import International from './Navbar/Packages/Internationl/International'
 import InternationalDetail from './Navbar/Packages/Internationl/InternationalDetail'
 import Himachal from './Navbar/Destination/Himachal Pradesh/Himachal'
 import Content6 from './Navbar/about/Content/Content6'
+import EnquiryModal from './Navbar/EnquiryModal'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           {/* <Route path='/blog' element={<Blog />} /> */}
           <Route path='/about' element={<About/>} />
           <Route path='/content' element={<Content6/>} />
+          <Route path='/enquiry' element={<EnquiryModal/>} />
           
         </Routes>
       </Router>

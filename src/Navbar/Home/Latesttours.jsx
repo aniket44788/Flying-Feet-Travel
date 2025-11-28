@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import kashmir from "../Home/Tour Images/kashmir.jpeg"
 import goa from "../Home/Tour Images/goa.jpeg"
 import kerala from "../Home/Tour Images/kerala.jpeg"
 import darjeeling from "../Home/Tour Images/darjeeling.jpeg"
 import mcleodganj from "../Home/Tour Images/mcleodganj.jpeg"
+import EnquiryModal from '../EnquiryModal'
 import "./latesttour.css"
+
 function Latesttours() {
+    const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+    const [selectedTour, setSelectedTour] = useState(null);
+
     const tours = [
         {
             id: 1,
@@ -60,7 +65,7 @@ function Latesttours() {
             badge: "New"
         },
         {
-            id: 4,
+            id: 5, // Fixed duplicate ID
             image: mcleodganj,
             title: "Mcleodganj - Triund tour with us",
             location: "Kangra , Himachal Pradesh",
@@ -71,12 +76,15 @@ function Latesttours() {
             description: "Experience the vibrant Tibetan culture of McLeodGanj. Visit ancient monasteries, enjoy peaceful cafes, explore local markets, and soak in the spiritual atmosphere of the Himalayas.",
             highlights: ["Triund Trek", "Dalai Lama Temple", "Bhagsu Waterfall", "Local Tibetan Market"],
             badge: "Popular"
-
         }
     ]
 
-    return (
+    const handleEnquiryClick = (tour) => {
+        setSelectedTour(tour);
+        setIsEnquiryOpen(true);
+    };
 
+    return (
         <section className="tours-section">
             <div className="tours-container">
 
@@ -153,13 +161,21 @@ function Latesttours() {
                                     </div>
 
                                     <div className="action-buttons">
-                                        <button className="btn-primary">
-
+                                        <button className="btn-primary price-btn">
                                             {tour.price}
-
-
                                             <svg viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                                         </button>
+
+                                        <button
+                                            className="btn-primary enquiry-btn"
+                                            onClick={() => handleEnquiryClick(tour)}
+                                        >
+                                            Get Enquiry
+                                            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                            </svg>
+                                        </button>
+
                                         <button className="btn-favorite">
                                             <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                                         </button>
@@ -170,6 +186,16 @@ function Latesttours() {
                     })}
                 </div>
             </div>
+
+            {/* Enquiry Modal - Placed outside the loop */}
+            <EnquiryModal
+                isOpen={isEnquiryOpen}
+                onClose={() => {
+                    setIsEnquiryOpen(false);
+                    setSelectedTour(null);
+                }}
+                tour={selectedTour}
+            />
         </section>
     );
 }

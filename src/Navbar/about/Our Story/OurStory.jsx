@@ -40,22 +40,8 @@ function OurStory() {
                      <br />  For international travel, you'll typically need:
                 </>
             ),
-        },  {
-            title: "What types of tours does Mother India Tour Travels offer?",
-            tag: (
-                <>
-                  We offer a diverse range of tours, including cultural, adventure, wildlife, and customized tours. Explore our website to discover the perfect itinerary that suits your travel preferences.
-                </>
-            ),
         },
-          {
-            title: "What is the cancellation policy for Mother India Tour Travels?",
-            tag: (
-                <>
-                 Our cancellation policy varies depending on the type of tour and the timing of the cancellation. Please refer to our terms and conditions or contact our customer service for specific details on cancellations and refunds
-                </>
-            ),
-        },  {
+            {
             title: "How do I know if my booking is confirmed?",
             tag: (
                 <>

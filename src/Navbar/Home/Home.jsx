@@ -10,6 +10,7 @@ import Svgimage from './Svgimage';
 import HeroSection from './Blogturn/HeroSection';
 import FooterCopy from "../FooterCopy"
 import Latesttours from "./Latesttours";
+// import Content1 from "./Content1/Content1";
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
   return (
     <>
       <Customslider />
+      {/* <Content1/> */}
       <Latesttours/>
       <Svgimage />
       <WhyChooseUs />
